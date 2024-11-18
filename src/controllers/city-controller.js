@@ -4,7 +4,7 @@ const {CityService}=require('../services/index');
  * data->req.body 
  */
 const cityService=new CityService();
-
+ 
  
 const create=async (req,res)=>{
     try {
@@ -93,3 +93,4 @@ module.exports={
     get,
     update
 }
+
