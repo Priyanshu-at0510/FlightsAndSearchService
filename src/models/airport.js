@@ -11,10 +11,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      this.hasMany(models.City,{
+      this.belongsTo(models.City,{
         foreignKey:'cityId',
-        onDelete:'CASCADE'
-      });
+        onDelete:'CASCADE'  // the moment you delete a city airport algo get deleted
+      })
     }
   }
   Airport.init({
