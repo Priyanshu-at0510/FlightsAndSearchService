@@ -6,6 +6,7 @@ const ApiRoutes=require('./routes/index');
 
 const db=require('./models/index');
 //const {City,Airport}=require('./models/index');
+
 const setupAndStartServer=async()=>{
     //create the express object
     const app=express();
